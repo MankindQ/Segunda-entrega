@@ -20,11 +20,6 @@ nav{
 nav ul{
     list-style-type: none;
 }
-nav li{
-    display: inline-block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 footer{
     background-color: rgb(27,27,27);   
 }
@@ -83,7 +78,7 @@ footer{
     font-style: italic;
 }
 .divTP{
-    margin-top: 6%;
+    margin-top: 0%;
 }
 .divNosotros{
     margin-top: 3%;
@@ -119,6 +114,10 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-style: italic;
+}
+.Mapa{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 /*Edicion contacto*/
 .mainContacto{
@@ -231,5 +230,81 @@ footer{
     }
     100%{
         transform: translateY(0px);
+    }
+}
+@media screen and (max-width:425px){
+    
+
+    .mainMedia{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-size: medium;
+    }
+    nav{
+        font-size: x-small !important;
+    }
+    .divNosotros{
+        grid-template-areas:
+        "N1"
+        "N2"
+        "N3"
+        ;
+    }
+    .N1, .N2, .N3{
+        margin-top: 3%;
+        height: 120px;
+        width: 230px;
+    }
+}
+@media screen and (max-width:468px){
+    
+
+    .mainMedia{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-size: medium;
+    }
+    nav{
+        font-size: x-small !important;
+    }
+    .divNosotros{
+        grid-template-areas:
+        "N1"
+        "N2"
+        "N3"
+        ;
+    }
+    .N1, .N2, .N3{
+        margin-top: 3%;
+        height: 120px;
+        width: 230px;
+    }
+}
+@media screen and (max-width:768px){
+    
+
+    .mainMedia{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .mainNosotros{
+        height: 1200px;
+    }
+    .divNosotros{
+        grid-template-areas:
+        "N1"
+        "N2"
+        "N3"
+        ;
+    }
+    .N1, .N2, .N3{
+        margin-top: 3%;
     }
 }
