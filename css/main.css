@@ -258,6 +258,12 @@ footer{
     .mainIndex{
         font-size: medium !important;
     }
+    .mainContacto{
+        height: 1000px;
+    }
+    .mainContacto div{
+        font-size: small;
+    }
 }
 @media screen and (max-width:468px){
     
